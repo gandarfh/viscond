@@ -8,4 +8,3 @@ local Git = {
 }
 
 return Git
-

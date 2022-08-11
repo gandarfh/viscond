@@ -21,4 +21,3 @@ config = {
 }
 
 return config
-

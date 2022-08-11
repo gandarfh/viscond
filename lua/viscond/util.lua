@@ -19,4 +19,3 @@ function M.initialise(skeleton)
 end
 
 return M
-
