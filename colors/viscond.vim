@@ -26,5 +26,5 @@ package.loaded['viscond.SymbolOutline'] = nil
 package.loaded['viscond.Notify'] = nil
 package.loaded['viscond.Misc'] = nil
 
-require("viscond-v2")
+require("viscond")
 EOF
