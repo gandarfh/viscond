@@ -40,7 +40,7 @@ local Treesitter = {
   TSTagAttribute = { fg = C.light_blue, },
   TSPunctBracket = { fg = C.fg, },
   TSPunctSpecial = { fg = C.blue, },
-  TSString = { fg = C.yellow, },
+  TSString = { fg = C.light_yellow, },
   TSStringRegex = { fg = C.orange, },
   TSStringEscape = { fg = C.yellow_orange, },
   TSTag = { fg = C.blue, },
