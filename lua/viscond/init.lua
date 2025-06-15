@@ -1,6 +1,6 @@
 vim.api.nvim_command("hi clear")
 if vim.fn.exists("syntax_on") then
-  vim.api.nvim_command("syntax reset")
+	vim.api.nvim_command("syntax reset")
 end
 vim.o.background = "dark"
 vim.o.termguicolors = true
@@ -10,6 +10,7 @@ local util = require("viscond.util")
 Config = require("viscond.config")
 C = require("viscond.palette")
 local highlights = require("viscond.highlights")
+local avante = require("viscond.avante")
 local Treesitter = require("viscond.Treesitter")
 local markdown = require("viscond.markdown")
 local Whichkey = require("viscond.Whichkey")
@@ -33,12 +34,33 @@ local SymbolOutline = require("viscond.SymbolOutline")
 local Notify = require("viscond.Notify")
 local Misc = require("viscond.Misc")
 
-
 local skeletons = {
-  highlights, Treesitter, markdown, Whichkey, Git, LSP, Quickscope, Telescope, NvimTree, Lir, Buffer, StatusLine,
-  IndentBlankline, Dashboard, DiffView, Bookmarks, Bqf, Cmp, Gps, Packer, SymbolOutline, Notify, Misc
+	highlights,
+	avante,
+	Treesitter,
+	markdown,
+	Whichkey,
+	Git,
+	LSP,
+	Quickscope,
+	Telescope,
+	NvimTree,
+	Lir,
+	Buffer,
+	StatusLine,
+	IndentBlankline,
+	Dashboard,
+	DiffView,
+	Bookmarks,
+	Bqf,
+	Cmp,
+	Gps,
+	Packer,
+	SymbolOutline,
+	Notify,
+	Misc,
 }
 
 for _, skeleton in ipairs(skeletons) do
-  util.initialise(skeleton)
+	util.initialise(skeleton)
 end
